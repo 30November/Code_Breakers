@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prerna-Ujjivan</title>
+    <link href="https://cdn.ux4g.gov.in/UX4G@2.0.8/css/ux4g-min.css" rel="stylesheet">
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid"> <a class="navbar-brand" href="#">Prerna-Ujjivan</a> <button class="navbar-toggler"
+                type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+                    class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#"></a> </li>
+                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"> Department </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">School</a></li>
+                            <li><a class="dropdown-item" href="#">College</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link" href="/login.html"> Login </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="/register.html">Sign up</a> </li>
+                </ul>
+
+
+                <form class="d-flex" role="search"> <input class="form-control me-2" type="search" placeholder="Search"
+                        aria-label="Search" /> <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<header>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid"> <a href="https://education.rajasthan.gov.in/home"><img src="assets/images/logo.png"
+                width="250" height="100" class="navbar-brand"></img> </a> <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+                    class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li>
+                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link disabled">Disabled</a> </li>
+                </ul>
+                <form class="d-flex" role="search"> <input class="form-control me-2" type="search" placeholder="Search"
+                        aria-label="Search" /> <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <main id="content"></main>
+    <script>
+        fetch('index.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('content').innerHTML = data;
+            });
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> -->
+    <script src="https://cdn.ux4g.gov.in/UX4G@2.0.8/js/ux4g.min.js"></script>
+</body>
+<footer>Hello</footer>
+
+</html>
